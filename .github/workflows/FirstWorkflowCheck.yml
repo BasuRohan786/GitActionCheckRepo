@@ -33,4 +33,4 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo "Add other actions to build,$ENVNAME"
-          echo "test, and deploy your project.$env:ENVNAME
+          echo "test, and deploy your project. $env:ENVNAME"
