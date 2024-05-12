@@ -26,7 +26,7 @@ jobs:
     - name: who-am-i action
       uses: microsoft/powerplatform-actions/who-am-i@v0
       with:
-        environment-url: 'https://user9-dev.crm.dynamics.com/'
+        environment-url: 'https://org82728d75.crm6.dynamics.com/'
         user-name: 'Rukai@Basu786.onmicrosoft.com'
         password-secret: ${{ secrets.password }}
 
@@ -37,7 +37,7 @@ jobs:
         user-name: 'Rukai@Basu786.onmicrosoft.com'
         password-secret: ${{ secrets.password }}
         solution-name: RohanLabSolution
-        solution-output-file: out/exported/Lab.zip
+        solution-output-file: out/exported/RohanLabSolution.zip
 
     - name: unpack-solution action
       uses: microsoft/powerplatform-actions/unpack-solution@v0
