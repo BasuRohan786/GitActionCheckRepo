@@ -24,8 +24,8 @@ jobs:
     - name: Pack solution
       uses: microsoft/powerplatform-actions/pack-solution@v0
       with:
-        solution-folder: solutions/RohanLabSolution1
-        solution-file: out/solutions/RohanLabSolution1.zip
+        solution-folder: solutions/RohanLabSolution2
+        solution-file: out/solutions/RohanLabSolution2.zip
         solution-type: Unmanaged
 
     - name: Import solution as unmanaged to build env
@@ -34,7 +34,7 @@ jobs:
         environment-url: 'https://org82728d75.crm6.dynamics.com/'
         user-name: 'Rukai@Basu786.onmicrosoft.com'
         password-secret: ${{ secrets.password }}
-        solution-file: out/solutions/RohanLabSolution1.zip
+        solution-file: out/solutions/RohanLabSolution2.zip
         force-overwrite: true
         publish-changes: true
 
@@ -44,15 +44,15 @@ jobs:
         environment-url: 'https://org82728d75.crm6.dynamics.com/'
         user-name: 'Rukai@Basu786.onmicrosoft.com'
         password-secret: ${{ secrets.password }}
-        solution-name: RohanLabSolution1
+        solution-name: RohanLabSolution2
         managed: true
-        solution-output-file: out/ship/RohanLabSolution1.zip
+        solution-output-file: out/ship/RohanLabSolution2.zip
 
     - name: Upload the ready to ship solution to GH artifact store
       uses: actions/upload-artifact@v2
       with:
         name: managedSolutions
-        path: out/ship/RohanLabSolution1.zip
+        path: out/ship/RohanLabSolution2.zip
 
   release-to-staging:
     needs: [ convert-to-managed ]
@@ -77,6 +77,6 @@ jobs:
         environment-url: 'https://orgda4aa7b3.crm6.dynamics.com/'
         user-name: 'anuu@Basu786.onmicrosoft.com'
         password-secret: ${{ secrets.password1 }}
-        solution-file: out/release/RohanLabSolution1.zip
+        solution-file: out/release/RohanLabSolution2.zip
         force-overwrite: true
         publish-changes: true
