@@ -36,21 +36,21 @@ jobs:
         environment-url: 'https://org82728d75.crm6.dynamics.com/'
         user-name: 'Rukai@Basu786.onmicrosoft.com'
         password-secret: ${{ secrets.password }}
-        solution-name: RohanLabSolution1
-        solution-output-file: out/exported/RohanLabSolution1.zip
+        solution-name: RohanLabSolution2
+        solution-output-file: out/exported/RohanLabSolution2.zip
 
     - name: unpack-solution action
       uses: microsoft/powerplatform-actions/unpack-solution@v0
       with:
-        solution-file: out/exported/RohanLabSolution1.zip
-        solution-folder: out/solutions/RohanLabSolution1
+        solution-file: out/exported/RohanLabSolution2.zip
+        solution-folder: out/solutions/RohanLabSolution2
         solution-type: 'Unmanaged'
         overwrite-files: true
 
     - name: branch-solution, prepare it for a PullRequest
       uses: microsoft/powerplatform-actions/branch-solution@v0
       with:
-        solution-folder: out/solutions/RohanLabSolution1
-        solution-target-folder: solutions/RohanLabSolution1
+        solution-folder: out/solutions/RohanLabSolution2
+        solution-target-folder: solutions/RohanLabSolution2
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         allow-empty-commit: true
