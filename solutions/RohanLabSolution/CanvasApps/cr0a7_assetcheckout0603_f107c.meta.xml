@@ -28,7 +28,4 @@
   <IsCustomizable>1</IsCustomizable>
   <BackgroundImageUri>/CanvasApps/cr0a7_assetcheckout0603_f107c_BackgroundImageUri</BackgroundImageUri>
   <DocumentUri>/CanvasApps/cr0a7_assetcheckout0603_f107c_DocumentUri.msapp</DocumentUri>
-  <AdditionalUris>
-    <AdditionalUri>/CanvasApps/cr0a7_assetcheckout0603_f107c_AdditionalUris0_identity.json</AdditionalUri>
-  </AdditionalUris>
-</CanvasApp>
+  </CanvasApp>
