@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModule>
+  <UniqueName>sample_InnovationHub</UniqueName>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <WebResourceId>e7939e18-8be7-e711-a82e-000d3a37c848</WebResourceId>
+  <OptimizedFor></OptimizedFor>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <FormFactor>1</FormFactor>
+  <ClientType>4</ClientType>
+  <NavigationType>0</NavigationType>
+  <AppModuleComponents>
+    <AppModuleComponent type="1" schemaName="account" solutionaction="Added" />
+  </AppModuleComponents>
+  <LocalizedNames>
+    <LocalizedName description="Innovation Challenge" languagecode="1033" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description description="Start a company wide innovation challenge. Ideas are submitted, reviewed, voted on, and the best ideas get funded for new projects." languagecode="1033" />
+  </Descriptions>
+</AppModule>
